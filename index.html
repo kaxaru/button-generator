@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8 lte9 lte8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv ="X-UA-Compatible" contenr="IE=edge">
+	<meta name="viewport" content="width=device-width" initial-scale="1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="dest/css/main.css" media="screen">
+	<link rel="stylesheet" href="dest/css/normalize.min.css">
+	<link rel="stylesheet" href="dest/css/ui-darkness/jquery-ui-1.9.2.custom.css">
+	
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+	<title>web application</title>
+</head>
+<body>
+	<div class="main">
+		<div class="position">
+			<header>
+				<div class="wrapp">
+					<div class="title">
+						Css3 button generator
+					</div>
+				</div>
+			</header>
+			<section class="app">
+				<div class="wrapp">
+					<div class="app__left">
+						<div class="app__title">
+							Options
+						</div>
+						<div class="app__left-option">
+							<div class="app__left-option_box">
+								<div class="app__left-option_name">
+									Border radius
+								</div>
+								<div class="app__left-option_control">
+									<div id="border-radius"></div>
+								</div>
+							</div>
+							<div class="app__left-option_box">
+								<div class="app__left-option_name">
+									Border size
+								</div>
+								<div class="app__left-option_control">
+									<div id="border-size"></div>
+								</div>
+							</div>
+							<div class="app__left-option_box">
+								<div class="app__left-option_name">
+									Horisontal size
+								</div>
+								<div class="app__left-option_control">
+									<div id="horisontal"></div>
+								</div>
+							</div>
+							<div class="app__left-option-box">
+								<div class="app__left-option_name">
+									Vertical size
+								</div>
+								<div class="app__left-option_control">
+									<div id="vertical"></div>
+								</div>
+							</div>
+						</div>
+						<div class="app__left-name_button">
+							<div class="app__left-name_button-text">
+								text
+							</div>
+							<div class="app__left-name_button-input">
+								<input id="buttonText" class="app__input-text" type="text" >
+							</div>
+						</div>
+					</div>
+					<div class="app__right">
+						<div class="app__title">
+							Result
+						</div>
+						<div class="app__right-element">
+							<div class="app__right-box">
+								<button id="app-element">
+									Loftblog
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="app-code">
+				<div class="wrapp">
+					<div class="app-code__output">
+						<div class="app-resultHtml">
+							<pre>
+								
+							</pre>
+						</div>
+						<div class="app-resultCss">
+							<pre>
+								
+							</pre>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mail">
+				<div class="app-code__mail">
+					<form id="send" action="send.php" method="post">
+						<input type="text" name="email" placeholder="e-mail">
+						<input type="submit" >
+					</form>
+				</div>
+			</section>
+		</div>
+		<div id="player">
+			<object height="100" width="100%" id="sound" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+			    
+			    <param name="allowscriptaccess" value="always"></param>
+			    <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http://soundcloud.com/draeko/draeko-mortus-drum-bass&enable_api=true&object_id=sound&show_artwork=true&download=true" type="application/x-shockwave-flash" width="100%" name="sound"></embed>
+			</object>
+		</div>
+		 
+	</div>
+	<script type="text/javascript" src="dest/js/soundcloud.player.api.js"></script>
+	<script src='dest/js/jquery-1.8.3.js'></script>
+	<script src='dest/js/jquery-ui-1.9.2.custom.js'></script>
+	<script src='dest/js/main.js'></script>
+	<script src="dest/js/soundInit.js"></script>
+</body>
+</html>

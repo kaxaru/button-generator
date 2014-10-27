@@ -1,0 +1,9 @@
+-moz-border-radius:;
+-webkit-border-radius:;
+-o-border-radius:;
+border-radius:;
+border-width:;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:20px;
+padding-right:20px;

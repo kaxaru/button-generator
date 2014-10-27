@@ -1,0 +1,336 @@
+						/*----fonts----*/
+
+@font-face {
+	font-family: 'segoe-Ui';
+	src:url('/dest/fonts/segoeui-webfont.eot?') format('eot'),
+	url('/dest/fonts/segoeui-webfont.otf') format('otf'),
+	url('/dest/fonts/segoeui-webfont.woff') format('woff'),
+	url('/dest/fonts/segoeui-webfont.ttf') format('ttf'),
+	url('/dest/fonts/segoeui-webfont.svg#segoeui-webfont') format('eot');
+}
+
+.myriad-r {
+	font-family: "segoe-Ui";
+}
+
+						/*----main----*/
+
+html {
+	height: 100%;
+	width: 100%;
+	font-size: 100.01%;
+}
+
+body {
+	-webkit-font-smoothing: antialised;
+	width: 100%;
+	height: 100%;
+	font: 12px/1.4 'Arial', 'Helvetica', sans-serif;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+pre{
+	 overflow: hidden !important;
+}
+
+	.position {
+		width: 1100px;
+		height: 687px;
+		border: 1px solid #000;
+		background-color: #ececec;
+		background: url('../img/main_back.jpg') no-repeat;
+		-moz-background-size: 100%;
+		-webkit-background-size: 100%;
+		-o-background-size: 100%;
+		background-size: 100%; 
+		-webkit-border-radius:12px;
+		-moz-border-radius:12x;
+		border-radius:12px;
+		margin:10px auto;
+		behavior: url(/dest/pie/PIE.php);
+	}
+
+/* Ie 8 scale background*/
+	.ie8 .position {
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/dest/img/main_back.jpg', sizingMethod='scale');
+	}
+						/*----end main----*/
+
+						/*----header----*/
+
+	.wrapp {
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.title {
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'segoe-Ui';
+		color: #fff;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 100px;
+		margin-top: 30px;
+	}
+
+						/*----end header----*/
+
+						/*----app----*/
+
+.app {
+	overflow:hidden;
+}
+
+	.app__title {
+		text-align: center;
+		font-size: 18px;
+		font-family: 'segoe-Ui';
+		font-weight: 600;
+		padding-bottom: 30px;
+		text-transform: uppercase;
+		color:#fff;
+
+	}
+
+
+						/*----app-left----*/
+
+	.app__left {
+		display: block;
+		float:left;
+		width: 40%;
+		padding-left: 5%;
+	}
+
+
+
+		.app__left-option {
+			padding:0 0 30px 30px;
+		}
+
+			.app__left-option_box {
+				padding-bottom:15px;
+			}
+
+			.app__left-option_name {
+				float: left;
+				font:18px/1.4 'segoe-UI';
+				color:#fff;
+			}
+
+			.app__left-option_control {
+				padding-top: 5px;
+				padding-left: 120px;
+				width: 200px;
+			}
+
+			.app__left-name_button-text {
+				float: left;
+				font:18px/1.4 'segoe-UI';
+				color:#fff;
+			}
+
+			.app__left-name_button-input {
+				display: block;
+				padding-left: 50px;
+			}
+
+						/*----app-right----*/
+
+	.app__right {
+		display: block;
+		float:right;
+		width: 40%;
+	}
+
+	.app__right-box {
+		padding-left: 10%;
+		width: 80%;
+		text-align: center;
+		min-height: 100px;
+		line-height: 100px;
+	}
+
+		.app-element {
+			margin:0 auto;
+			border: none;
+			background-color: #acacac;
+			-webkit-border-radius:7px;
+			-moz-border-radius:7px;
+			border-radius:7px;
+		}
+
+
+						/*----end app----*/
+
+						/*----app-code----*/
+.app-code {
+	overflow:hidden;
+	margin-top:90px;
+}
+
+	.app-resultHtml {
+		display: block;
+		float:left;
+		width: 40%;
+		padding-left: 10%;
+		text-align: center;
+		font:14px/1.4 'segoe-UI';
+		color:#fff; 
+	}
+
+	.app-resultCss {
+		display: block;
+		float:right;
+		width: 40%;
+		padding-right: 10%;
+		text-align: center;
+		font:14px/1.4 'segoe-UI';
+		color:#fff; 
+	}
+				/*mail*/
+
+	.app-code__mail {
+	padding: 20px 0 0 300px;
+	margin: 0 auto;
+	width: 50%;
+	}
+
+		input[type="submit"] {
+			background-color: #ddfafa;
+			border:none;
+			height:22px;
+			font:14px/1.4 'segoe-UI';
+			color:red;
+		}
+				/*end mail*/
+
+				/*----player----*/
+
+#player {
+	padding-top:20px;
+	width: 40%;
+	margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 1200px) {
+	.position {
+		width: 1100px;
+		height: 687px;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.position {
+		width: 970px;
+		height: 606px;
+	}
+
+	.app-code {
+		overflow: hidden;
+		margin-top: 50px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.position {
+		width:750px;
+		height:768px;
+		background: url('../img/main1024x768.jpg') no-repeat;
+	}
+
+	/*scale background ie8*/
+	.ie8 .position {
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/dest/img/main1024x768.jpg', sizingMethod='crop');
+	}
+
+	.wrapp {
+		width: 95%;
+	}
+
+		.app__left {
+			padding-left: 1%;
+		}
+
+		.app__right {
+			width: 50%;
+		}
+
+		.app-resultCss {
+			color: #00A3FF;
+
+			width: 90%;
+			font: 14px/1.4 'segoe-UI';
+			padding-top: 30px;
+			text-align: center;
+			margin: 0 35px;
+			display: block;
+			float: left;
+		}
+
+		.app-resultHtml {
+			display: block;
+			float: left;
+			text-align: center;
+			font: 14px/1.4 'segoe-UI';
+			color: #00A3FF;
+			width: 95%;
+			padding-left: 30px;
+		}
+
+		.app-code__mail {
+			margin: 0 auto;
+			width: 50%;
+			padding: 100px 0 0 200px;
+		}
+}
+
+@media only screen and (max-width: 768px) {
+	.position {
+		width:750px;
+		height:768px;
+		background: url('../img/main1024x768.jpg') no-repeat;
+	}
+
+		/*scale background ie8*/
+	.ie8 .position {
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/dest/img/main1024x768.jpg', sizingMethod='crop');
+	}
+
+
+		.app-resultCss {
+			width: 95%;
+			font: 14px/1.4 'segoe-UI';
+			color: #00A3FF;
+
+			text-align: center;
+			padding-top: 30px;
+			margin: 0 auto;
+			display: block;
+			float: left;
+		}
+
+		.app-resultHtml {
+			display: block;
+			float: left;
+			text-align: center;
+			font: 14px/1.4 'segoe-UI';
+			color: #00A3FF;
+			width: 95%;
+			padding-left: 30px;
+		}
+
+		.app-code__mail {
+			margin: 0 auto;
+			width: 50%;
+			padding: 100px 0 0 200px;
+		}
+
+
+}
